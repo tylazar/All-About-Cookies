@@ -37,10 +37,6 @@ body {
 	padding-right: 16px;
 }
 
-h1 {
-	font-family: Times New Roman, serif;
-}
-
 button {
 	font-family: sans-serif;
 	font-size: 22px;
@@ -58,6 +54,11 @@ button:hover {
 	background-color: #58626f;
 }
 
+h1 {
+	font-family: Times New Roman, serif;
+	color: #2f6690;
+}
+
 .mainContent {
 	padding-left: 5vw;
 	padding-right: 5vw;
@@ -65,4 +66,11 @@ button:hover {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+}
+
+.emphasis {
+	font-weight: bold;
+	color: #2f6690;
+	font-size: 1.1em;
 }
