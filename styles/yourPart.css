@@ -1,5 +1,6 @@
 body {
 	margin: 1%;
+	margin-right: 2%;
 	font-family: Arial, sans-serif;
 }
 
@@ -39,6 +40,7 @@ body {
 
 h1 {
 	font-family: Times New Roman, serif;
+	color: #2f6690;
 }
 
 button {
@@ -66,3 +68,40 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 }
+
+img {
+	width: 45vw;
+}
+
+.imageColumn {
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+	margin-right: 2%;
+	float: left;
+	width: 48%;
+	align-content: center;
+	text-align: center;
+}
+
+.textColumn {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	margin-right: 2%;
+	float: left;
+	width: 48%;
+	align-content: center;
+	text-align: center;
+}
+
+.imageCaption {
+	margin-top: 0vh;
+	font-size: .8em;
+	font-style: italic;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
