@@ -7,12 +7,52 @@
 <body>
 	<div class="content">
 		<div class="topNav">
-			<a href="index.html">HOME</a>
-			<a href="cookies.html">COOKIES</a>
-			<a href="ads.html">ADVERTISEMENTS</a>
-			<a class="active" href="">YOUR PART</a>
-			<a href="future.html">FUTURE</a>
-			<a href="quiz.html">QUIZ</a>
+			<div class="dropdown">
+				<button class="dropBtn" onclick="window.location.href='index.html'">HOME</button>
+			</div>
+
+			<div class="dropdown">
+				<button class="dropBtn" onclick="window.location.href='cookies.html'">COOKIES</button>
+				<div class="dropdownContent">
+					<a href="#">Intro to Cookies</a>
+					<a href="#">How Cookies Work</a>
+					<a href="#">Types of Cookies</a>
+					<a href="#">Prevalence</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<button class="dropBtn" onclick="window.location.href='ads.html'">ADVERTISEMENTS</button>
+				<div class="dropdownContent">
+					<a href="#">How They Work Together</a>
+					<a href="#">Are Cookies Necessary?</a>
+					<a href="#">Danger</a>
+					<a href="#">Cookies, Ads, and Adblockers</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<button class="active dropBtn" onclick="">YOUR PART</button>
+				<div class="dropdownContent">
+					<a href="#">Effects on the Average User</a>
+					<a href="#">Privacy Concerns</a>
+					<a href="#">Steps to Take</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<button class="dropBtn" onclick="window.location.href='future.html'">FUTURE</button>
+				<div class="dropdownContent">
+					<a href="#">Are Cookies Disappearing?</a>
+					<a href="#">The Internet of Things</a>
+					<a href="#">Protection and Security</a>
+				</div>
+			</div>
+
+			<div class="dropdown">
+				<button class="dropBtn" onclick="window.location.href='quiz.html'">QUIZ</button>
+			</div>
+
 			<p>Ty Lazarchik</p>
 		</div>
 
