@@ -24,10 +24,10 @@
 			<div class="dropdown">
 				<button class="active dropBtn" onclick="">ADVERTISEMENTS</button>
 				<div class="dropdownContent">
-					<a href="#">How They Work Together</a>
-					<a href="#">Are Cookies Necessary?</a>
-					<a href="#">Danger</a>
-					<a href="#">Cookies, Ads, and Adblockers</a>
+					<a href="#how">How They Work Together</a>
+					<a href="#necessary">Are Cookies Necessary?</a>
+					<a href="#danger">Danger</a>
+					<a href="#adblockers">Cookies and Adblockers</a>
 				</div>
 			</div>
 
@@ -57,37 +57,31 @@
 		</div>
 
 		<div class="row">
+			<h1 class="title">Cookies and Advertisements</h1>
 			<div class="imageColumn">
 				<img src="images/trackers.jpg">
 				<p class="imageCaption">Source: https://www.translatemedia.com/translation-blog/google-connect-online-ads-offline-purchasing-behaviour/</p>
 			</div>
 			<div class="textColumn">
-				<h1>Advertisements</h1>
-				<p>
-					How do cookies work with ads?
-						- cookies have a key (e.g. "ID) and a value (e.g. 123), where the value is a unique identifier for the user
-						- advertisers access the "ID" cookie and track how 123 visits different websites 
-						- tracking like this is aggregated across different websites to create a profile of the user's identity (all above from behavioral advertising, pg. 276)
-						- "marketers and advertisers use cookies for collecting demographic information about users" (cookies and privacy, pg. 53)
-						- cookies are used to determine the effectiveness of ads by tracking a user after they click on an ad
-					Are cookies necessary for ads?
-						- no, but they do it well
-						- there are alternative options, like having generic ads that are either given to everyone or randomly selected; or having users fill out preference surveys
-						- cookies are desired by ad companies because they automatically get preferences, dont require user participation, and can track a large amount of data
-						- "an alternative way for web sites to accomplish this is to allow users to create unique IDs and passwords for themselves." (cookies and privacy, pg. 53)
-					Is this dangerous?
-						- not always; flash cookies can be used to just store information like volume preferences, if you use subtitles, etc.
-						- however, they can also be used for creating a "user profile"
-						- when it comes down to it, this is a philosophical debate really; is a lack of privacy dangerous, or is personalized content a boon? "privacy is a dynamic and ambiguous concept" (online privacy concerns, pg. 6)
-						- cookies themselves allow users to customize website featurs and save preferences (cookies and privacy, pg. 52)
-						- it's collection of information without explicit consent, although websites now are putting in notices
-							- note, however, that these notices often aren't "are you ok with cookies?", they're "we're using cookies and you have to be ok with it to use our site"
-						- cookies can easily be seen and information can be easily accessed
-					What adblockers do to cookies
-						- most browsers have a "do not track" option, where it will send a request in the package header to not generate trackers (eff)
-						- an ad blocker essentially does the same thing as a "do not track" option, although how often and rigorously depends on the user's configuration
-						- however, researchers have done experiments that show that nearly every cookie-blocking policy can be bypassed (who left open the cookie jar)
-				</p>
+				<h2 class="subtitle firstSection" id="how">How Cookies and Ads Work Together</h2>
+				<p>Each cookie file typically contains a key (for example, "newCookie") and a value (like "123"). The value is a unique identifier specific to the device it is stored on - for example, a laptop or phone. To track a user through cookies, the advertiser can access the newCookie and track how the 123 device visits different websites.<sup>1</sup> Tracking of this nature is collected across different websites to create a holistic profile of the user. This profile can include things like age, gender, geographic location, and personal preferences. The purpose of these profiles is to collect demographic information about the user. For example, if an ad company knows that 123 is a device that belongs to a 25-year-old Latina trans woman from Tampa, they can personalize the kind of ads that she sees on websites that use personalized ad services. Cookies are also used to determine how effective a delivered ad is. This is done by tracking a user after they click on an ad - for example, tracking to see if they actually purchase the advertised product.</p>
+
+				<h2 class="subtitle" id="necessary">Are Cookies Necessary?</h2>
+				<p>The short answer to whether cookies are necessary for advertisements is not really. It would be entirely possible to implement alternative options such as having generic ads delivered randomly to users or having them opt-in to preference surveys if they want more personalized ads. However, cookies are preferred by advertising companies because they can automatically discover users' preferences, don't require active participation, and can track a large amount of data. In short, they can make more effective ads without any direct involvement from the user. Researchers have also come up with alternative methods of creating personalized content that doesn't involve hidden files; for example, allowing users to create IDs and passwords that are used to track their activity.<sup>2</sup> This would allow advertisers to get personalized data and create more effective ads while also allowing users to opt-in to being tracked and retain more control over the data. However, cookies remain the most popular way to track users and create personalized advertisements.</p>
+
+				<h2 class="subtitle" id="danger">Are Cookies Dangerous?</h2>
+				<p>Cookies have gained attention and notoriety in recent years for their common use of tracking; many view them as an invasion of users' privacy and potentially dangerous. This is not always the case, however. As discussed on the cookies page, tracking cookies are only one type of cookie file. Others like flash and session cookies are just used to store login status and setting preferences like volume, subtitles, language, etc. However, it is true that third-party cookies have been gaining popularity and are often used to create a profile of the user. At the heart of this question is, really, one of philosophy: is lowered anonymity worth the personalized content? As Sipior, Ward, and Mendoza write, "privacy is a dynamic and ambiguous concept."<sup>3</sup> On one hand, cookies have been a huge boon to the development and ease of use of the Internet; they allow you to sign into Facebook, click on the settings page, and not have to sign in again. They also prevent you having to enable subtitles on Netflix every time you visit the site. On the other hand, information is often collected from users without their consent, or at least without their fully informed, explicit consent. Websites are commonly implementing notice banners that inform users of their use of cookies. However, these banners are often phrased as "consent or leave" rather than "consent or we won't do it." Furthermore, cookies can be easily accessed and viewed by packet sniffers or remote hackers. In all, this author is inclined to say that third-party tracking cookies are harmful if not used correctly; however, it is encouraged that you form your own opinions on the matter.</p>
+
+				<h2 class="subtitle" id="adblockers">Cookies and Adblockers</h2>
+				<p>Most modern Internet browsers have a "do not track" option automatically available in their privacy settings. This will send a request to any visited website that they not generate tracking cookies. An additional adblocker essentially does the same thing as this automatic feature; if you have "do not track" enabled in your standard browser, an adblocker won't do anything more to prevent tracking cookies. Rather than preventing additional cookies, an adblocker removes the actual ad space from websites. Furthermore, the effectiveness of an adblocker depends on how rigorously the user has configured its settings - many additional security features are often left disabled. Researchers have also shown that nearly every cookie-blocking policy can be bypassed.<sup>4</sup> In all, adblockers can be effective in removing ads from your Web view, they aren't much more effective than the standard browser settings.</p>
+
+				<div class="sources">
+					<h2 class="subtitle">Sources</h2>
+					<p>1. behavioral advertising</p>
+					<p>2. cookies and privacy</p>
+					<p>3. online privacy concerns</p>		
+					<p>4. who left open the cookie jar</p>		
+				</div>
 			</div>
 		</div>
 	</div>

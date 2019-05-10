@@ -9,6 +9,32 @@ body {
 	background-color: #EFEFEF;
 }
 
+.title, .subtitle, .subSub {
+	font-family: Times New Roman, serif;
+	color: #2f6690;
+	text-align: center;
+}
+
+.title {
+	font-size: 300%;
+}
+
+.subtitle {
+	margin-top: 50px;
+}
+
+.firstSection {
+	margin-top: 20px;
+}
+
+.subSub {
+	margin-top: 25px;
+}
+
+.sources p {
+	line-height: 1;
+}
+
 h1 {
 	font-family: Times New Roman, serif;
 	color: #2f6690;
@@ -62,6 +88,16 @@ img {
 	width: 48%;
 	align-content: center;
 	text-align: center;
+}
+
+.textColumn p {
+	line-height: 1.5;
+	text-align: left;
+	text-indent: 5%;
+}
+
+.sources p {
+	line-height: 1;
 }
 
 .imageCaption {
