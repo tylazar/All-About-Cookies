@@ -1,7 +1,3 @@
-const quizContainer = document.getElementById("quiz");
-const resultsContainer = document.getElementById("results");
-const submitButton = document.getElementById("submit");
-
 const myQuestions = [
   {
     question: "What is a Web cookie?",
@@ -161,12 +157,14 @@ function showResults() {
     } else {
       //if answer is wrong or blank
       //color the answers red
-      answerContainer[questionNumber].style.color = "red";
+      answerContainers[questionNumber].style.color = "red";
     }
   });
 
+  var percentage = numCorrect / myQuestions.length;
+
   //show number of correct answers out of total
-  resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+  resultsContainer.innerHTML = `You got ${percentage}%: ${numCorrect} out of ${myQuestions.length} correct`;
 }
 
 function showSlide(n) {
@@ -202,7 +200,9 @@ function showPreviousSlide() {
   showSlide(currentSlide - 1);
 }
 
-
+const quizContainer = document.getElementById("quiz");
+const resultsContainer = document.getElementById("results");
+const submitButton = document.getElementById("submit");
 
 //display quiz immediately
 buildQuiz();
@@ -211,16 +211,17 @@ buildQuiz();
 const nextButton = document.getElementById("next");
 const prevButton = document.getElementById("previous");
 const slides = document.querySelectorAll(".slide");
+const title = document.getElementById("title");
 let currentSlide = 0;
 
 //show the first slide
 showSlide(0);
+
+//on submit, show results
+submitButton.addEventListener("click", showResults);
 
 //on previous, go to previous slide
 prevButton.addEventListener("click", showPreviousSlide);
 
 //on next, go to next slide
 nextButton.addEventListener("click", showNextSlide);
-
-//on submit, show results
-submitButton.addEventListener("click", showResults);
