@@ -4,34 +4,98 @@ const submitButton = document.getElementById("submit");
 
 const myQuestions = [
   {
-    question: "Who is the strongest?",
+    question: "What is a Web cookie?",
     answers: {
-      a: "Superman",
-      b: "The Terminator",
-      c: "Waluigi, obviously",
-      d: "placeholder"
+      a: "A sweet treat for coders",
+      b: "A file used to collect information about an Internet user",
+      c: "A setting in your Internet browser",
+      d: "An ad-blocking software"
     },
-    correctAnswer: "c"
+    correctAnswer: "b"
   },
   {
-    question: "What is the best site ever created?",
+    question: "Which of the following is NOT a use of cookies?",
     answers: {
-      a: "SitePoint",
-      b: "Simple Steps Code",
-      c: "Trick question; they're both the best",
-      d: "placeholder"
-    },
-    correctAnswer: "c"
-  },
-  {
-    question: "Where is Waldo really?",
-    answers: {
-      a: "Antarctica",
-      b: "Exploring the Pacific Ocean",
-      c: "Sitting in a tree",
-      d: "Minding his own business, so stop asking"
+      a: "Online shopping carts",
+      b: "Persisting login sessions",
+      c: "Saving website preferences",
+      d: "Applying themes to browsers"
     },
     correctAnswer: "d"
+  },
+  {
+    question: "Which type of cookie is used to track users?",
+    answers: {
+      a: "First-party cookies",
+      b: "Third-party cookies",
+      c: "Flash cookies",
+      d: "Session cookies"
+    },
+    correctAnswer: "d"
+  },
+  {
+    question: "Which of the following is NOT a common concern about cookie privacy?",
+    answers: {
+      a: "Storage space",
+      b: "Anonymity",
+      c: "Data sharing",
+      d: "Surreptitious data collection"
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "True or false: Cookies are stored on your computer forever.",
+    answers: {
+      a: "True",
+      b: "False"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "Which of the following is an effective way to minimize tracking cookies?",
+    answers: {
+      a: "Set up 'do not track' requests",
+      b: "Turn off your Wi-Fi",
+      c: "Regularly close your browser",
+      d: "Always accept terms and conditions"
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "Which of the following is NOT a type of cookie?",
+    answers: {
+      a: "First-party cookies",
+      b: "Data cookies",
+      c: "Flash cookies",
+      d: "Session cookies"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "True or false: Cookies are essential in showing Web ads.",
+    answers: {
+      a: "True",
+      b: "False"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "Why were cookies originally created?",
+    answers: {
+      a: "To track users and sell products to them",
+      b: "To maintain interactions between Website visits",
+      c: "To keep track of users' various usernames and passwords",
+      d: "To allow users to communicate with Web servers"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "True or false: Cookies are used to create personalized ads on the Web",
+    answers: {
+      a: "True",
+      b: "False"
+    },
+    correctAnswer: "a"
   }
 ];
 
