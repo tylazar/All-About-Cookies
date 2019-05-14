@@ -27,7 +27,7 @@ const myQuestions = [
       c: "Flash cookies",
       d: "Session cookies"
     },
-    correctAnswer: "d"
+    correctAnswer: "b"
   },
   {
     question: "Which of the following is NOT a common concern about cookie privacy?",
@@ -86,7 +86,7 @@ const myQuestions = [
     correctAnswer: "b"
   },
   {
-    question: "True or false: Cookies are used to create personalized ads on the Web",
+    question: "True or false: Cookies are used to create personalized ads on the Web.",
     answers: {
       a: "True",
       b: "False"
@@ -110,7 +110,6 @@ function buildQuiz() {
       answers.push(
         `<label>
           <input type="radio" name="question${questionNumber}" value="${letter}">
-          ${letter} :
           ${currentQuestion.answers[letter]}
         </label>`
       );
@@ -161,10 +160,30 @@ function showResults() {
     }
   });
 
-  var percentage = numCorrect / myQuestions.length;
+  var percentage = numCorrect / myQuestions.length * 100;
+
+  const finalOutput = [];
+
+  finalOutput.push(
+  	`<div class="resultsDiv">
+  		<div class="percent">
+  			<h1>You got ${percentage}%</h1>
+  		</div>
+  		<div class="detail">
+  			<p>${numCorrect} out of ${myQuestions.length} correct</p>
+  		</div>
+  	</div>`
+  );
+
+  nextButton.style.display = 'none';
+  prevButton.style.display = 'none';
+  submitButton.style.display = 'none';
+  retakeButton.style.display = 'inline-block';
+
+  quizContainer.innerHTML = finalOutput;
 
   //show number of correct answers out of total
-  resultsContainer.innerHTML = `You got ${percentage}%: ${numCorrect} out of ${myQuestions.length} correct`;
+  //resultsContainer.innerHTML = `You got ${percentage}%: ${numCorrect} out of ${myQuestions.length} correct`;
 }
 
 function showSlide(n) {
@@ -174,6 +193,8 @@ function showSlide(n) {
   slides[n].classList.add('activeSlide');
   //update the current slide number
   currentSlide = n;
+
+  retakeButton.style.display = 'none';
 
   //hide previous button if on first question
   if (currentSlide == 0) {
@@ -200,9 +221,14 @@ function showPreviousSlide() {
   showSlide(currentSlide - 1);
 }
 
+function restartQuiz() {
+	location.reload();
+}
+
 const quizContainer = document.getElementById("quiz");
-const resultsContainer = document.getElementById("results");
+//const resultsContainer = document.getElementById("results");
 const submitButton = document.getElementById("submit");
+const retakeButton = document.getElementById("retake");
 
 //display quiz immediately
 buildQuiz();
@@ -225,3 +251,6 @@ prevButton.addEventListener("click", showPreviousSlide);
 
 //on next, go to next slide
 nextButton.addEventListener("click", showNextSlide);
+
+//on retake, restart quiz
+retakeButton.addEventListener("click", restartQuiz);

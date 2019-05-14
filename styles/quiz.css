@@ -12,6 +12,11 @@ h1 {
 	font-family: Times New Roman, serif;
 }
 
+.title {
+	align-self: center;
+	color: #2f6690;
+}
+
 button {
 	font-family: sans-serif;
 	font-size: 22px;
@@ -29,12 +34,11 @@ button:hover {
 }
 
 .buttons {
-	padding-top: 30vh;
-	padding-left: 40vw;
-	padding-right: 40vw;
+	padding: 30vh 20% 0 20%;
+	width: 60%;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .mainContent {
@@ -49,6 +53,7 @@ button:hover {
 	font-size: 34px;
 	font-family: Times New Roman, serif;
 	margin-bottom: 12px;
+	color: #2f6690;
 }
 
 .answers {
@@ -86,6 +91,35 @@ button:hover {
 	position: relative;
 	height: 200px;
 	margin-top: 40px;
+}
+
+.resultsDiv {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	width: 100%;
+	margin-left: 15%;
+	margin-right: 20%;
+	padding: 10vh;
+	background-color: #fff;
+	width: 60%;
+	border-radius: 12px;
+	box-shadow: 10px 10px 16px #708090;
+}
+
+.resultsDiv .percent {
+	font-size: 125%;
+	color: #2f6690;
+	font-family: Times New Roman, serif;
+	margin-bottom: 12px;
+	align-self: center;
+}
+
+.resultsDiv .detail {
+	font-family: Arial, sans-serif;
+	align-self: center;
+	margin-bottom: 10px;
+	font-size: 110%;
 }
 
 .topNav {
